@@ -23,4 +23,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       run: mvn -B test org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=vicky2293_PetStore-FindByStatus
-
+    - uses: actions/upload-artifact@v3
+      with:
+        name: Automation Execution Report
+        path: report/AutomationReport.html
