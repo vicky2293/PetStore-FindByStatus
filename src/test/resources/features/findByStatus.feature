@@ -29,6 +29,7 @@ Feature: Find Pets By Status Tests
       | available |
       | pending   |
       | sold      |
+      |           |
 
   @findByStatus
   Scenario Outline: Able to retrieve data using multiple status - <status1> and <status2>
